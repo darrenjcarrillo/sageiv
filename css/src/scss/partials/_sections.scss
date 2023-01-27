@@ -435,393 +435,59 @@ section.about {
 }
 
 
-section.elminate-fat {
+section.col-banner {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 0 0 70px;
-  overflow: hidden;
-
-  @include isLarge {
-    padding: 150px 0 70px;
-  }
+  align-items: center;
+  min-height: 700px;
 
 
-  @include isRetina {
-    padding: 200px 0 70px;
-  }
-
-
-  .col-image-bg {
+  .img {
     position: absolute;
     top: 0;
-    left: -8%;
-
-  }
-
-  .container {
-    position: relative;
-    z-index: 99;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
-    flex-direction: column;
-    padding: 0;
+    margin: 0 auto;
+
+    align-items: center;
     justify-content: center;
-    max-width: 90%;
 
-    .content {
+
+    picture {
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      height: 100%;
 
-      .col-container {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
+      @media screen and (max-width: 1240px) {
 
-        @include isLarge {
-          flex-direction: row;
-        }
-
-        .col-item {
-          width: 100%;
-
-          @include isLarge {
-            width: 55%;
-          }
-
-
-          &:nth-child(1) {
-            width: 100%;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 120px;
-          
-
-            @include isSmall {
-              margin-bottom: 180px;
-            }
-
-            @include isMedium {
-              margin-bottom: 235px;
-            }
-
-            @include isLarge {
-              margin-top: 50px;
-              width: 50%;
-              margin-bottom: 0;
-              align-items: flex-start;
-            }
-
-            @include isRetina {
-              padding-left: 80px;
-            }
-
-            h2 {
-              text-align: center;
-            
-
-              @include isLarge {
-                text-align: left;
-              }
-            }
-    
-            
-            p {
-              text-align: center;
-              width: 100%;
-              
-              @include isLarge {
-                text-align: left;
-              }
-
-              @include isRetina {
-                width: 90%;
-              
-              }
-            }
-      
-            .btn-container {
-              margin-top: 50px;
-              position: relative;
-              z-index: 999;
-              display: flex;
-              gap: 15px;
-              flex-direction: column;
-              align-items: center;
-              
-      
-              @include isLarge {
-                flex-direction: row;
-              }
-            }
-          }
-
-          
-          &:nth-child(2) {
-            width: 100%;
-            position: relative;
-
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            
-
-            @include isLarge {
-              width: 50%;
-              padding-right: 50px;
-            }
-
-
-            .col-image-2 {
-              width: 50%;
-              // height: 100%;
-              position: absolute;
-              left: 10%;
-
-              top: -20%;
-
-              img {
-                width: 100%;
-                height: 100%;
-                border-radius: 50%;
-                box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-              }
-            }
-
-            .col-image-1 {
-              width: 70%;
-              
-              img {
-                width: 100%;
-                height: 100%;
-                border-radius: 0 0 80px 80px;
-                box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-              }
-            }
-
-            .col-image-3 {
-              position: absolute;
-              right: -2%;
-              bottom: -8%;
-              z-index: -1;
-            }
-          }
-
-        }
       }
 
-
+      img {
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: 100%;
+        // @media screen and (max-width: 1240px) {
+        //   opacity: 0.3;
+        // }
+        @media screen and (max-width: 700px) {
+          // opacity: 0.3;
+          // object-position: 75%;
+        }
+      }
     }
 
+   
   }
- 
-
 }
 
-// section.about {
-//   position: relative;
-//   display: flex;
-//   flex-direction: column;
-//   padding: 50px 0 70px;
-//   overflow: hidden;
-
-//   @include isLarge {
-//     padding: 150px 0 70px;
-//   }
-
-//   .container {
-//     position: relative;
-//     z-index: 99;
-//     display: flex;
-//     flex-direction: column;
-//     padding: 0 15px;
-//     justify-content: center;
-//     max-width: 100%;
-
-//     @include  isLarge {
-//       max-width: 90%;
-//       padding: 0;
-//     }
-
-//     .content {
-//       width: 100%;
-//       display: flex;
-//       flex-direction: column;
-//       align-items: center;
-
-//       .col-container {
-//         display: flex;
-//         justify-content: space-between;
-//         flex-direction: column-reverse;
-//         align-items: flex-start;
-//         width: 100%;
-
-//         @include isLarge {
-//           flex-direction: row;
-//         }
-
-//         .col-item {
-//           width: 100%;
-
-//           @include isLarge {
-//             width: 55%;
-//           }
-
-
-//           &:nth-child(1) {
-//             width: 100%;
-//             position: relative;
-
-//             display: flex;
-//             flex-direction: column;
-//             align-items: flex-end;
-            
-
-//             @include isLarge {
-//               width: 50%;
-//             }
-
-
-//             .col-image-2 {
-//               width: 35%;
-//               position: absolute;
-//               left: 10%;
-//               top: -10%;
-//               z-index: -1;
-
-
-//               .circle-image {
-//                 width: 100%;
-//                 height: 100%;
-//                 border-radius: 50%;
-//                 box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-//               }
-//             }
-
-//             .col-image-1 {
-//               width: 85%;
-
-//               @include isRetina {
-//                 width: 85%;
-//               }
-              
-//               img {
-//                 width: 100%;
-//                 height: 100%;
-//                 border-radius: 50%;
-//                 box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-//               }
-//             }
-
-//             .col-image-3 {
-//               position: absolute;
-//               left: -2%;
-//               bottom: -25%;
-//               z-index: -3;
-
-//               @include isRetina {
-//                 bottom: -15%;
-//               }
-
-//               @include is1500 {
-//                 bottom: -10%;
-//               }
-
-//               @include is1700 {
-//                 bottom: -5%;
-//               }
-//             }
-//           }
-
-
-
-//           &:nth-child(2) {
-//             width: 100%;
-//             position: relative;
-//             display: flex;
-//             flex-direction: column;
-//             align-items: center;
-//             justify-content: center;
-//             margin-bottom: 70px;
-
-
-//             @include isLarge {
-//               width: 50%;
-//               margin-bottom: 0;
-//               align-items: flex-start;
-//               margin-top: 50px;
-//             }
-
-//             @include isRetina {
-//               padding-left: 80px;
-//             }
-
-//             h2 {
-//               text-align: center;
-            
-
-//               @include isLarge {
-//                 text-align: left;
-//               }
-//             }
-    
-            
-//             p {
-//               text-align: center;
-//               width: 100%;
-              
-//               @include isLarge {
-//                 text-align: left;
-//               }
-
-//               @include isRetina {
-//                 width: 90%;
-              
-//               }
-//             }
-      
-//             .btn-container {
-//               margin-top: 50px;
-//               position: relative;
-//               z-index: 999;
-//               display: flex;
-//               gap: 15px;
-//               flex-direction: column;
-//               align-items: center;
-              
-      
-//               @include isLarge {
-//                 flex-direction: row;
-//               }
-//             }
-//           }
-//         }
-//       }
-
-
-//     }
-
-//   }
- 
-
-// }
-
-section.testimonials {
+section.team {
   position: relative;
   padding: 70px 0;
   display: flex;
   align-items: center;
-  background-color: #F4F4F4;
-
-  @include isLarge {
-    padding: 70px 0 120px;
-  }
 
 
   .img {
@@ -856,305 +522,213 @@ section.testimonials {
     .content {
       width: 100%;
 
-      .col-image-bg {
-        position: absolute;
-        left: 0;
-        top: -100px;
-        z-index: -1;
-
-        img {
-          width: 250px;
-        }
-      }
-
-
-
       .testimonial-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
-   
-        @include isLarge {
-          flex-direction: row;
+        align-items: center;
+
+
+        h2 {
+          text-align: center;
+          margin-bottom: 0;
         }
 
+        h3 {
+          width: 80%;
+          margin: 0 auto;
+          text-align: center;
+          line-height: 1.2;
+        }
+
+        .slide-container {  
+          width: 100%;
+          padding: 100px 0 50px;
+
+          @include isLarge {
+            width: 95%;
+            // padding: 200px 0 50px;
+          }
+
+          @include isXLarge {
+            // padding: 150px 50px;
+          }
+          
+          @include is1700 {
+            // padding: 250px 0 50px;
+            padding: 150px 0 50px;
+          }
+  
+          .slide-content {
+            display: flex;
+  
+            .card {
+              background: transparent;
+              border: none;
+             
+  
+              .card-content {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding-bottom: 40px;
+                margin: 0 auto;
+                width: 90%;
+                // padding: 50px 20px;
+                border: 3px solid $color-main;
+
+                @include isLarge {
+                  padding: 0 20px;
+                }
+
+                @include isXLarge {
+                  padding: 10px 20px;
+                }
+
+                @include isRetina {
+                  padding: 50px 20px;
+                }
 
 
-        .col-item {
-          width: 50%;
+          
+                .image-content {
+                  width: 40%;
+                  position: absolute;
+                  bottom: 0;
+                  left: 8%;
 
-          &:nth-child(1) {
-            width: 100%;
-            padding: 0 15px 50px;
+                  @include isLarge {
+                    height: 500px;
+                    width: 400px;
+                  }
 
-            @include isLarge {
-              padding-left: 100px;
-              width: 50%;
-              padding: 0;
-            }
+                  @include isXLarge {
+                    height: 550px;
+                    width: 450px;
+                  }
+           
 
-            @include isRetina {
-              padding-left: 200px;
-            }
+                  @include isRetina {
+                    left: 10%;
+                    height: 700px;
+                    width: 600px;
+                  }
+
         
 
+                  img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  }
+                }
 
-            .qoute-wrapper {
-              margin-bottom: 50px;
-              width: 70px;
-    
-              @include isLarge {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-              }
-            }
-    
-            h2 {  
-             
-              
-              @include isLarge {
-                width: 100%;
-                margin: 0 auto 40px;
-                text-align: left;
-              }
-            }
-    
-            .slide-container {  
-              width: 100%;
-              padding: 0 0 40px;
-              box-shadow: rgba(0, 0, 0, 0.16) 0 3px 15px;
-              border-radius: 30px;
-              background-color: #fff;
-    
-              @include isLarge {
-                width: 100%;
-              }
-      
-              .slide-content {
-                display: flex;
-      
-                .card {
-                  background: transparent;
-                  border: none;
-                 
-      
-                  .card-content {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: center;
-                    padding-bottom: 40px;
-                    margin: 0 auto;
-  
-                    
-                    width: 85%;
-                    
-                    padding: 40px 25px 25px;
-    
+                .text-content {
+                  background-color: transparent;
+                  padding: 20px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: center;
+                  width: 60%;
+                  z-index: 1;
+
+                  @include isMedium {
+                    padding: 25px 25px 25px 50px;
+                  }
+
+                  h4 {
+                    font-size: 2rem;
+                    color: $color-main;
+
                     @include isLarge {
-                      padding: 60px 0 25px;
-    
-                      width: 80%;
+                      font-size: 2rem;
                     }
-    
+          
+                    @include isXLarge {
+                      font-size: 3rem;
+                    }
+                  }
+
+                  
+                  .team-name {
+                    font-size: 1.2rem;
+
+
                     @include isRetina {
-                      padding: 60px 0 30pxs;
-                      width: 85%;
+                      font-size: 1.7rem;
                     }
-      
-                    p  {
-                      font-family: $font-secondary;
-                      text-align: left;
-                    }
-    
-                    div.review-name {
-                      display: flex;
-                      align-items: center;
-                      margin-bottom: 20px;
-                      .profile-icon {
-                        margin-right: 20px;
-                      }
+                  }
 
-                      h3 {
-                        font-weight: bold;
-                        text-transform: capitalize;
-                        font-style: normal;
-                        font-family: $font-primary;
-                        color: $b;
-                        margin: 0;
-                        text-align: left;
-                        font-size: 1.5rem;
+                  .btn-container {
+                    margin-top: 30px;
 
-
-                        @include isLarge {
-                          font-size: 2rem;
-                        }
-
-                        @include isRetina {
-                          font-size: 2.5rem;
-                        }
-                      }
-    
+                    @include isRetina {
+                      margin-top: 50px;
                     }
                   }
                 }
-              }
-    
-              .swiper-pagination{
-                position: absolute;
-                bottom: 20px;
-        
-                @media screen and (max-width: 500px) {
-                  bottom: 0px;
-                }
-              }
-        
-              .swiper-pagination-bullet{
-                height: 10px;
-                width: 100px;
-                border-radius: 1px;
-                margin: 0 10px;
-                background: transparent;
-        
-                height: 14px;
-                width: 14px;
-                border-radius: 50%;
-                border: 3px solid $color-secondary; 
-                opacity: 1;
-        
-        
-                @media screen and (max-width: 500px) {
-                  height: 14px;
-                  width: 14px;
-                  margin: 0 5px;
-        
-                }
-        
-              }
-    
-              span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-                background-color: $color-secondary;
-              }
-        
-              .swiper-button-next, .swiper-button-prev{
-                opacity: 0.7;
-                color: $color-secondary;
-                transition: all 0.3s ease;
-                height: 60px;
-                width: 60px;
-                background-color: $color-third;
-                border-radius: 50%;
-                
-              }
-              .swiper-button-prev {
-                transform: rotate(180deg);
-              }
-        
-              .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-                display: none;
-              }
-        
-              .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-                content:  none;
-              }
-            }
 
-
-
-            .btn-container {
-              margin-top: 50px;
-              position: relative;
-              z-index: 999;
-              display: flex;
-              gap: 15px;
-              flex-direction: column;
-              align-items: center;
-              justify-content: flex-end;
-              
-      
-              @include isLarge {
-                flex-direction: row;
-              }
-            }
-
-            .col-image-dot {
-              position: absolute;
-              left: 0;
-              top: 30%;
-
-              @include isXLarge {
-                left: 5%;
-                top: 30%;
-              }
-
-              @include isRetina {
-                left: 7%;
-                top: 32%;
-              }
-
-              @include is1700 {
-                left: 6%;
-              }
-
-              img {
-                width: 150px;
               }
             }
           }
-          
-          
-          &:nth-child(2) {
-            width: 100%;
-            position: relative;
 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+          .swiper-pagination{
+            position: absolute;
+            bottom: 0px;
+    
+            @media screen and (max-width: 500px) {
+              bottom: 0px;
+            }
+          }
+    
+          .swiper-pagination-bullet{
+            height: 10px;
+            width: 100px;
+            border-radius: 1px;
+            margin: 0 5px;
+            background: #000000;
+            height: 14px;
+            width: 14px;
+            border-radius: 50%;
+    
+            @media screen and (max-width: 500px) {
+              height: 14px;
+              width: 14px;
+              margin: 0 5px;
+    
+            }
+    
+          }
+
+          span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: #000000;
+          }
+    
+          .swiper-button-next, .swiper-button-prev{
+            opacity: 0.7;
+            color: $color-secondary;
+            transition: all 0.3s ease;
+            height: 60px;
+            width: 60px;
+            background-color: $color-secondary;
+            border-radius: 50%;
             
-
-            @include isLarge {
-              width: 50%;
-            }
-
-
-
-            .col-image-1 {
-              width: 80%;
-
-              @include isRetina {
-                width: 60%;
-              }
-              
-              img {
-                width: 100%;
-                height: 719px;
-                object-fit: cover;
-                border-radius: 120px 40px 40px 40px;
-                box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-              }
-            }
-
-
-            .col-image-2 {
-              position: absolute;
-              right: 0;
-              bottom: -8%;
-              z-index: -1;
-
-              @include isRetina {
-                right: 7%;
-              }
-
-
-              @include is1700 {
-                right: 7%;
-              }
-            }
+          }
+          .swiper-button-prev {
+            transform: rotate(180deg);
+          }
+    
+          .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+            display: none;
+          }
+    
+          .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+            content:  none;
           }
         }
       }
+       
     }
   }
 }
