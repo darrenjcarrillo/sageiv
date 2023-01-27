@@ -64,7 +64,7 @@ function aniMate(n) {
 }
 
 aniMate(
-  ".rvl,.imageanimleft, .fade-up-stop, .fade-right-stop, .fade-left-stop ,.tanbox,.greybox .fade-in , .fade-in-left , .fade-in-right , .scale-down"
+  ".rvl,.imageanimleft, .fade-up-stop, .fade-right-stop, .fade-left-stop, .tanbox, .greybox .fade-in, .fade-in-left, .fade-in-right, .scale-down"
 );
 
 // Scroll to top button

@@ -6,13 +6,14 @@
 	z-index: 123123;
 	background: transparent;
   transition: 0.3s;
-	background-color: $color-main;
+	background-color: transparent;
 
 	&.act {
     transition: 0.3s;
-		background-color: $color-main;
+		background-color: $f;
 		// background-color: $f;
 		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+		padding-bottom: 15px;
 	}
 
 	@media screen and (max-width: 992px) {
@@ -46,8 +47,7 @@
 
 	section.top {
 		margin: 0 auto;
-		
-		background: $f;
+		background: transparent;
 		padding: 5px 0;
 		position: relative;
 		z-index: 0;
@@ -112,7 +112,7 @@
 				font-size: 0.875rem;
 				text-align: right;
 				color: $b;
-				// text-transform: uppercase;
+				text-transform: uppercase;
 
 
 
@@ -454,7 +454,7 @@
 			// First level
 			ul.items {
 				display: flex;
-				justify-content: flex-end;
+				justify-content: center;
 				margin: 0;
 				width: 100%;
 				padding: 0;
@@ -534,7 +534,7 @@
 
 					&.blue-text {
 						a.menulink {
-							color: $f;
+							color: $b;
               margin-right: 0;
 							font-weight: 500;
 
@@ -545,6 +545,11 @@
 					}
 
 
+					.logo-main {
+						margin: 0 40px;
+					}
+
+
 					
 
 					// first level link
@@ -552,32 +557,38 @@
 						font-family: $font-secondary;
 						position: static;
 						display: block;
-						margin: 0 25px;
+						margin: 0 35px;
 						// padding: 25px 0;
 						// padding-top: 15px;
 						text-decoration: none;
 						line-height: 1.2;
 						text-align: center;
 						text-transform: capitalize;
-						font-weight: 500;
+						font-weight: 400;
 						font-size: 1rem;
-						color: $f;
+						color: $b;
 						// letter-spacing: 1px;
 
 						@media screen and (max-width: 1500px) {
-							margin: 0 15px;
+							margin: 0 35px;
+							// font-size: 16px;
+						}
+
+						@media screen and (max-width: 1380px) {
+							margin: 0 30px;
 							// font-size: 16px;
 							
 						}
 
             @media screen and (max-width: 1250px) {
 							// font-size: 14px;
+							margin: 0 25px;
 							line-height: 1.2;
 							font-size: 0.9375rem;
 						}
 
 						@media screen and (max-width: 1150px) {
-							margin: 0 10px;
+							margin: 0 15px;
 						}
 
 						@media screen and (max-width: 1080px) {

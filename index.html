@@ -4,7 +4,7 @@
 <head itemscope itemtype="http://schema.org/WebSite">
     <meta charset="UTF-8" />
 
-    <title>Concord Internal Medicine</title>
+    <title>Sage IV</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -44,27 +44,29 @@
           <div class="container">
               <div class="content">
                   <div class="links">
-                      <a href="<?= get_site_url(); ?>/events/" class="link">Events</a>
+                      <a href="<?= get_site_url(); ?>/events/" class="link">Location</a>
                       <span class="l">|</span>
-                      <a href="<?= get_site_url(); ?>/promotions/" class="link">Location</a>
+                      <a href="<?= get_site_url(); ?>/events/" class="link">Blog</a>
                       <span class="l">|</span>
-                      <a href="tel:(978) 369-5575" class="link">(978) 369-5575</a>
+                      <a href="<?= get_site_url(); ?>/promotions/" class="link">Cotact Us</a>
+                      <span class="l">|</span>
+                      <a href="tel:(805) 364-2814" class="link">(805) 364-2814</a>
                   </div>
               </div>
           </div>
         </section>
 
         <section class="nav-container">
-            <div class="logo-main">
+            <!-- <div class="logo-main">
                 <figure class="logo">
                     <a href="<?= get_site_url(); ?>/" class="link-logo">
                         <picture>
                             <source type="image/svg+xml" srcset="img/concord-internal-medicine-logo.svg">
-                            <img src="img/concord-internal-medicine-logo.svg" alt="Concord Internal Medicine" class="" width="174" height="58">
+                            <img src="img/concord-internal-medicine-logo.svg" alt="Sage IV" class="" width="174" height="58">
                         </picture>
                     </a>
                 </figure>
-            </div>
+            </div> -->
             <nav class="navdiv" aria-label="main navigation" role="navigation">
                 <span class="closebutton menu-button">
                     <div class="bars" aria-label="menu" aria-haspopup="true" aria-expanded="false" tabindex="0"
@@ -81,18 +83,18 @@
 
                             <!-- menu item -->
                             <li role="menuitem" class="menu-item hasdropdown ">
-                              <a href="<?= get_site_url(); ?>/about/" class="menulink">
+                              <a href="<?= get_site_url(); ?>/home/" class="menulink">
                                   <span class="menutext">
-                                    About Us
+                                    HOME
                                   </span>
                               </a>
                             </li>
 
                             <!-- menu item -->
                             <li role="menuitem" class="menu-item hasdropdown ">
-                              <a href="<?= get_site_url(); ?>/aesthetics/" class="menulink">
+                              <a href="<?= get_site_url(); ?>/about/" class="menulink">
                                   <span class="menutext">
-                                  Aesthetics
+                                    ABOUT US
                                   </span>
                               </a>
                               <div class="dropmenu norm">
@@ -115,9 +117,9 @@
 
                             <!-- menu item -->
                             <li role="menuitem" class="menu-item hasdropdown ">
-                                <a href="<?= get_site_url(); ?>/internal-medicine/" class="menulink">
+                                <a href="<?= get_site_url(); ?>/treatment-menu/" class="menulink">
                                     <span class="menutext">
-                                      internal Medicine
+                                      TREATMENT MENU
                                     </span>
                                 </a>
                                 <div class="dropmenu norm">
@@ -138,11 +140,25 @@
                                 </div>
                             </li>
 
+                            <!-- LOGO -->
+                            <li role="menuitem" class="menu-item ">
+                              <div class="logo-main">
+                                <figure class="logo">
+                                    <a href="<?= get_site_url(); ?>/" class="link-logo">
+                                        <picture>
+                                            <source type="image/svg+xml" srcset="img/sage-iv-logo.svg">
+                                            <img src="img/sage-iv-logo.svg" alt="Sage IV" class="" width="174" height="58">
+                                        </picture>
+                                    </a>
+                                </figure>
+                            </div>
+                            </li>
+
                             <!-- menu item -->
                             <li role="menuitem" class="menu-item hasdropdown ">
-                                    <a href="<?= get_site_url(); ?>/concerns-conditions/" class="menulink">
+                                    <a href="<?= get_site_url(); ?>/blog/" class="menulink">
                                     <span class="menutext">
-                                      concerns/conditions
+                                      BLOG
                                     </span>
                                 </a>
                                 <div class="dropmenu norm">
@@ -170,7 +186,7 @@
                             <li role="menuitem" class="menu-item hasdropdown ">
                                 <a href="<?= get_site_url(); ?>/patient-info/" class="menulink">
                                     <span class="menutext">
-                                        Patient Info
+                                        PATIENT INFO
                                     </span>
                                 </a>
                                 <div class="dropmenu norm">
@@ -192,19 +208,10 @@
                             </li>
 
                             <!-- menu item -->
-                            <li role="menuitem" class="menu-item ">
-                            <a href="<?= get_site_url(); ?>/gallery/" class="menulink">
-                                <span class="menutext">
-                                    Gallery
-                                </span>
-                            </a>
-                            </li>
-
-                            <!-- menu item -->
                             <li role="menuitem" class="menu-item blue-text">
                                 <a href="<?= get_site_url(); ?>/request-appointment/" class="menulink">
                                     <span class="menutext">
-                                        Request Appointment
+                                        REQUEST APPOINTMENT
                                     </span>
                                 </a>
                             </li>
@@ -216,7 +223,7 @@
                           <div class="logo-mobile">
       
                               <picture>
-                                  <img src="img/concord-internal-medicine-logo.svg" alt="Concord Internal Medicine logo" class="logo" width="174" height="58">
+                                  <img src="img/concord-internal-medicine-logo.svg" alt="Sage IV logo" class="logo" width="174" height="58">
                               </picture>
         
                           </div>
@@ -230,7 +237,7 @@
                               </div>
                               <div class="phone">
                                   <!-- <a href="mailto:email@email.com">email@email.com</a> -->
-                                  <a href="tel:(978) 369-5575" class="phonelink">Tel: (978) 369-5575</a>
+                                  <a href="tel:(805) 364-2814" class="phonelink">Tel: (805) 364-2814</a>
                                   <a href="tel:(978) 371-9189" class="phonelink">Fax: (978) 371-9189</a>
                               </div>
                           </address>
@@ -249,77 +256,43 @@
     <main role="main" class="main">
 
       <section class="welcome">
+        <div class="img">
+          <picture>
+            <source media="(min-width: 576px)" srcset="img/welcome@2x.jpg">
+            <img src="img/welcome@2x.jpg" alt="Woman in infinity pool" class="pic">
+          </picture>
+        </div>
         <div class="container">
           <div class="content ">
 
             <div class="col-container">
               <div class="col-item">
-
-                <div class="col-image">
-                  <picture>
-                    <source media="(min-width: 576px)" srcset="img/welcome1@2x.jpg">
-                    <img src="img/welcome1@2x.jpg" alt="Older man shaking hands with a younger man" class="pic">
-                  </picture>
+                <div class="col-img rvl">
+                  <img src="img/sage-iv-hero@2x.png" alt="Sage IV - IV Hydration & Vitamin Infusions">
                 </div>
-                <div class="col-text-content">
-                  <div class="rvl">
-                    <h1 class="h-title">
-                      FOR YOUR HEALTH
-    
-                    </h1>
-                  </div>
-
-                  <div class="rvll">
-                    <p>
-                      Find support for chronic diseases, schedule vaccinations, and more here at Concord Internal Medicine. We’re dedicated to providing you with the medical care you deserve. Request an appointment today.
-                    </p>
-                  </div>
-    
-                <div class="rvl">
-                    <div class="btn-container">
-                        <a href="#" class="ui-btn">
-                          View Treatments
-                        </a>
-                    </div>
-                </div>
-                </div>
-
               </div>
 
+              
               <div class="col-item">
 
-                <div class="col-image">
-                  <picture>
-                    <source media="(min-width: 576px)" srcset="img/welcome2@2x.jpg">
-                    <img src="img/welcome2@2x.jpg" alt="Woman holding her face" class="pic">
-                  </picture>
-                </div>
-                <div class="col-text-content">
-                  <div class="rvl">
-                    <h1 class="h-title">
-                      FOR YOUR BEAUTY
-    
-                    </h1>
-                  </div>
-
-
-                  <div class="rvl">
-                    <p>
-                      From wrinkles and fine lines to laser hair removal – we offer a full range of aesthetic services designed to give you the look you want. Get in touch and request a consultation at our Concord, MA, office.
-
-                    </p>
-                  </div>
-    
+  
                 <div class="rvl">
-                    <div class="btn-container">
-                        <a href="#" class="ui-btn">
-                          View Treatments
-                        </a>
-                    </div>
+                  <p>
+                    Feel renewed, refreshed, and rejuvenated at Sage IV – your premier destination for IV Therapy services. Explore our treatment menu to find your formula, and get in touch to get your boost!
+                  </p>
                 </div>
-                </div>
+  
+              <div class="rvl">
+                  <div class="btn-container">
+                      <a href="#" class="ui-btn">
+                        Schedule
+                      </a>
+                  </div>
+              </div>
 
               </div>
+
+
             </div>
 
 
@@ -354,7 +327,7 @@
                 <div class="col-item">
 
                   <div class="treatment-col">
-                    <div class="treatment-item fade-up-stop">  
+                    <div class="treatment-item rvl">  
  
 
                       <div class="item">
@@ -362,7 +335,7 @@
                               <span class="title">
   
           
-                                <button class="btn-select" data-target="#element-1"  autofocus>
+                                <button class="btn-select" data-target="#element-1" >
 
                                   <span class="icon">
                                       <img src="img/hair-reduction.svg" alt="Hair reduction icon"> 
@@ -711,7 +684,7 @@
     
                   <div class="rvl">
                     <p>
-                      Concord Internal Medicine Associates is led by Dr. Paul D’Ambrosio. As a Concord native, Dr. D’Ambrosio has spent his entire career caring for the needs of his community. With over 30 years of experience in the field, he offers the expert care you need to restore your health and uncover your beauty. Acting under his guidance, our office is focused on increasing your quality of life, one visit at a time. Connect with us today to learn more about our services.
+                      Sage IV Associates is led by Dr. Paul D’Ambrosio. As a Concord native, Dr. D’Ambrosio has spent his entire career caring for the needs of his community. With over 30 years of experience in the field, he offers the expert care you need to restore your health and uncover your beauty. Acting under his guidance, our office is focused on increasing your quality of life, one visit at a time. Connect with us today to learn more about our services.
                     </p>
                   </div>
                                     
@@ -874,7 +847,7 @@
 
               <div class="rvl">
                 <p>
-                  Concord Internal Medicine Associates has provided healthcare services for the Concord community for over 30 years. Whether you need a physical exam or need help managing a chronic condition, we’re here for you every step of the way.
+                  Sage IV Associates has provided healthcare services for the Concord community for over 30 years. Whether you need a physical exam or need help managing a chronic condition, we’re here for you every step of the way.
                 </p>
               </div>
                                 
@@ -1026,7 +999,7 @@
   
                   <div class="rvl">
                     <p>
-                      If you’re ready to get started, we’re ready to help. We provide aesthetic and internal medicine services catered to your needs and goals. Schedule an appointment today by emailing us or dialing <a href="tel:(978) 369-5575">(978) 369-5575</a>.
+                      If you’re ready to get started, we’re ready to help. We provide aesthetic and internal medicine services catered to your needs and goals. Schedule an appointment today by emailing us or dialing <a href="tel:(805) 364-2814">(805) 364-2814</a>.
                     </p>
                   </div>
                 </div>
@@ -1318,8 +1291,8 @@
                         </span>
                         
                         <div class="phone-link">
-                          <a href="tel:(978) 369-5575" class="footer-link">
-                            Tel: (978) 369-5575
+                          <a href="tel:(805) 364-2814" class="footer-link">
+                            Tel: (805) 364-2814
                           </a>
 
                           <a href="tel: (978) 371-9189" class="footer-link">
@@ -1365,7 +1338,7 @@
               <div class="copy__content">
                 <div class="copy__content">
                   <span class="main">
-                    <span class="main">© 2023 Concord Internal Medicine Associates </span>
+                    <span class="main">© 2023 Sage IV Associates </span>
                   </span>
                   <span class="l">|</span>
                     <span class="main">
