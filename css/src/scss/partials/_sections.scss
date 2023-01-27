@@ -85,6 +85,7 @@ section.welcome {
 
           p {
             text-align: center;
+            color: $b;
           }
 
 
@@ -120,295 +121,54 @@ section.welcome {
   }
 }
 
-section.view-treatments {
+
+section.iv-therapy {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 70px 0;
-  min-height: 900px;
+  align-items: center;
+  justify-content: center;
+  // min-height: 900px;
+  // padding: 0 0 100px;
 
-  .container {
-    position: relative;
-    z-index: 99;
+  .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
-    flex-direction: column;
-    padding: 0;
+    margin: 0 auto;
+
+    align-items: center;
     justify-content: center;
-    
 
-    .content {
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      align-items: center;
 
-      .top-col {
-        margin-bottom: 50px;
-        padding: 0 15px;
-        
+    picture {
+      width: 100%;
+      height: 100%;
 
-        @include isLarge {
-          padding: 0;
-        }
-       
-        h2,p,h3 {
-          text-align: center
-        }
+      @media screen and (max-width: 1240px) {
 
-        p {
-          @include isRetina {
-            width: 70%;
-            margin: 0 auto;
-          }
-        }
       }
 
-      .col-container {
+      img {
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
         width: 100%;
-
-        @include is1100 {
-          width: 90%;
-        }
-
-        .col-item {
-
-          .treatment-col {
-
-            .treatment-item {
-
-
-
-              .item {
-                display: flex;
-                width: 100%;
-
-
-                .treatment-container {
-                  display: flex;
-                  width: 100%;
-                  flex-direction: column;
-                  align-items: center;
-                
-
-                    span.title {
-                      display: flex;
-                      width: 100%;
-                      align-items: center;
-                      justify-content: center;
-                      flex-direction: column;
-                      align-items: center;
-                      
-
-
-                      @include isLarge {
-                        width: 70%;
-                        flex-direction: row;
-                      }
-
-    
-
-                      .btn-select {
-                        width: 70%;
-                        position: relative;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        border: 1px solid #D9D9D9;
-                        padding: 20px 0;
-
-
-                        @include isSmall {
-                          width: 50%;
-                        }
-
-
-                        @include isMedium {
-                          width: 25%;
-                        }
-
-
-                        @include isRetina {
-                          width: 300px;
-                        }
-
-                        &:focus {
-                          transition: all 0.3s ease;
-                          color: $f;
-                          font-weight: 500;
-                          outline: none;
-                          background: rgb(70,17,17);
-                          background: linear-gradient(180deg, rgba(70,17,17,1) 0%, rgba(179,84,30,1) 100%);
-       
-                        }
-
-                        .icon {
-                          pointer-events: none;
-                          color: $f;
-                          margin-bottom: 15px;
-                         
-                          svg {
-                            color: $f;
-                            fill: $f;
-
-                          }
-                        }
-
-
-    
-                      }
-                    }
-
-                    .image-container {
-                      width: 100%;
-                      align-items: center;
-                      justify-content: center;
-                      display: none;
-                      right: 0;
-                      top: 0;
-                      margin-top: 50px;
-                      flex-direction: column;
-
-
-                      @include isLarge {
-                        flex-direction: row;
-                      }
-  
-                      &.active {
-                        display: flex;
-                        transition: all 0.3s ease;
-                      }
-
-   
-    
-                      .image-wrapper {
-                        position: relative;
-                        width: 100%;
-                        height: 100%;
-
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        
-                        @include isLarge {
-                          width: 50%;
-                        }
-                               
-
-                        img {
-                          width: 100%;
-                          height: 100%;
-                          border-radius: 50%;
-                        }
-
-                        div.image-1 {
-
-                          img {
-                            opacity: 0.2;
-                          }
-                        }
-
-                        div.image-2 {
-                          position: absolute;
-                          width: 90%;
-                          height: 90%;
-                        }
-                        
-
-
-                      }
-    
-                      .text-content {
-                        bottom: 20px;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        padding: 0 15px 50px;
-                        
-
-                        @include isLarge {
-                          width: 50%;
-                          align-items: flex-start;
-                          padding: 0;
-                        }
-                        
-                        h3 {
-                          color: $b;
-                          font-family: $font-primary;
-                          font-weight: bold;
-                          letter-spacing: 0;
-                          text-align: center;
-                          font-weight: 500;
-
-                          @include isLarge {
-                            text-align: left;
-                          }
-                        }
-    
-                        .ulist {
-                          display: flex;
-                          gap: 30px;
-    
-                          li {
-                            color: $b;
-    
-                            &::marker {
-                              color: $b;
-                            }
-                          }
-    
-                        }
-    
-                        p {
-                          margin-top: 20px;
-                          color: $b;
-                          text-align: center;
-                          width: 100%;
-                          margin: 20px auto;
-
-                          @include isLarge {
-                            text-align: left;
-                            width: 80%;
-                            margin: 0 auto 0 0;
-                          }
-
-                          @include isRetina {
-                            width: 70%;
-                          }
-                        }
-    
-                        .btn-container {
-                          margin-top: 50px;
-                        }
-                      }
-
-               
-                    }
-     
-                }
-
- 
-              }
-
-            }
-          }
-
+        // @media screen and (max-width: 1240px) {
+        //   opacity: 0.3;
+        // }
+        @media screen and (max-width: 700px) {
+          // opacity: 0.3;
+          // object-position: 75%;
         }
       }
-   
     }
 
+   
   }
- 
-
-}
-
-section.live-acne-free {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 0 0 100px;
 
   .container {
     position: relative;
@@ -417,6 +177,7 @@ section.live-acne-free {
     flex-direction: column;
     padding: 0;
     justify-content: center;
+    padding: 100px 0;
 
     .content {
       width: 100%;
@@ -433,49 +194,39 @@ section.live-acne-free {
 
         @include isLarge {
           flex-direction: row;
+          justify-content: flex-end;
         }
 
         .col-item {
           width: 100%;
+          width: 100%;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: $f;
+          padding: 25px;
 
+          
           @include isLarge {
-            width: 55%;
+            width: 45%;
           }
+       
 
-          &:nth-child(1) {
-            width: 100%;
-            position: relative;
+ 
 
-            @include isLarge {
-              width: 50%;
-            }
-          }
-
-          &:nth-child(2) {
-            width: 100%;
-            position: relative;
+          div.col-content {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
-            background-color: $color-main;
-            padding: 50px 20px;
-         
+            border: 3px solid $color-main;
+            padding: 100px 70px;
 
-            @include isLarge {
-              position: absolute;
-              width: 45%;
-              right: 10%;
-            }
- 
-            @include isRetina {
-              padding: 100px 30px;
-            }
-
-            h2 {
+            h1 {
               text-align: center;
-              color: $f;
-
+  
               @include isLarge {
                 text-align: left;
               }
@@ -487,9 +238,166 @@ section.live-acne-free {
               text-align: center;
               width: 100%;
               margin: 0 auto;
-              color: $f;
              
+  
+              @include isLarge {
+                margin-top: 40px;
+                text-align: left;
+              }
+            }
+      
+            .btn-container {
+              margin-top: 50px;
+              position: relative;
+              z-index: 999;
+              display: flex;
+              gap: 15px;
+              flex-direction: column;
+              align-items: center;
+              
+      
+              @include isLarge {
+                flex-direction: row;
+              }
+  
+  
+            }
+          } 
 
+
+
+        }
+      }
+
+
+    }
+
+  }
+ 
+
+}
+
+section.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+
+  .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    margin: 0 auto;
+
+    align-items: center;
+    justify-content: center;
+
+
+    picture {
+      width: 100%;
+      height: 100%;
+
+      @media screen and (max-width: 1240px) {
+
+      }
+
+      img {
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: 100%;
+        // @media screen and (max-width: 1240px) {
+        //   opacity: 0.3;
+        // }
+        @media screen and (max-width: 700px) {
+          // opacity: 0.3;
+          // object-position: 75%;
+        }
+      }
+    }
+
+   
+  }
+
+  .container {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    padding: 0 50px 100px;
+
+    .content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .col-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+
+        @include isLarge {
+          flex-direction: row;
+          justify-content: flex-start;
+        }
+
+        .col-item {
+          width: 100%;
+          width: 100%;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: $f;
+          padding: 25px;
+
+          
+          @include isLarge {
+            width: 50%;
+          }
+       
+
+ 
+
+          div.col-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid $color-main;
+            padding: 100px 70px 70px;
+
+            h2 {
+              text-align: center;
+              margin-bottom: 0;
+  
+
+            }
+
+            h3 {
+              line-height: 1;
+              text-align: center;
+            }
+    
+            
+            p {
+              margin-bottom: 0;
+              text-align: center;
+              width: 100%;
+              margin: 0 auto;
+             
+  
               @include isLarge {
                 margin-top: 40px;
               }
@@ -508,54 +416,12 @@ section.live-acne-free {
               @include isLarge {
                 flex-direction: row;
               }
+  
+  
             }
+          } 
 
-            .col-image-1 {
-              position: absolute;
-              top: -8%;
-              left: -23%;
-              z-index: 99;
-              display: none;
-              
-              @include isLarge {
-                width: 150px;
-                display: block;
-              }
 
-              @include isXLarge {
-                top: -8%;
-                left: -23%;
-              }
-
-              @include isRetina {
-                width: 100%;
-              }
-
-              @include is1500 {
-                top: -8%;
-                left: -17%;
-              }
-            }
-
-            .col-image-2 {
-              position: absolute;
-              right: -10%;
-              bottom: -12%;
-              z-index: -1;
-              display: none;
-
-              @include isLarge {
-                width: 300px;
-                display: block;
-              }
-
-              @include isRetina {
-                width: 100%;
-                display: flex;
-                justify-content: flex-end;
-              }
-            }
-          }
 
         }
       }
@@ -567,6 +433,7 @@ section.live-acne-free {
  
 
 }
+
 
 section.elminate-fat {
   position: relative;
@@ -757,193 +624,193 @@ section.elminate-fat {
 
 }
 
-section.about {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 50px 0 70px;
-  overflow: hidden;
+// section.about {
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   padding: 50px 0 70px;
+//   overflow: hidden;
 
-  @include isLarge {
-    padding: 150px 0 70px;
-  }
+//   @include isLarge {
+//     padding: 150px 0 70px;
+//   }
 
-  .container {
-    position: relative;
-    z-index: 99;
-    display: flex;
-    flex-direction: column;
-    padding: 0 15px;
-    justify-content: center;
-    max-width: 100%;
+//   .container {
+//     position: relative;
+//     z-index: 99;
+//     display: flex;
+//     flex-direction: column;
+//     padding: 0 15px;
+//     justify-content: center;
+//     max-width: 100%;
 
-    @include  isLarge {
-      max-width: 90%;
-      padding: 0;
-    }
+//     @include  isLarge {
+//       max-width: 90%;
+//       padding: 0;
+//     }
 
-    .content {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+//     .content {
+//       width: 100%;
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
 
-      .col-container {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column-reverse;
-        align-items: flex-start;
-        width: 100%;
+//       .col-container {
+//         display: flex;
+//         justify-content: space-between;
+//         flex-direction: column-reverse;
+//         align-items: flex-start;
+//         width: 100%;
 
-        @include isLarge {
-          flex-direction: row;
-        }
+//         @include isLarge {
+//           flex-direction: row;
+//         }
 
-        .col-item {
-          width: 100%;
+//         .col-item {
+//           width: 100%;
 
-          @include isLarge {
-            width: 55%;
-          }
+//           @include isLarge {
+//             width: 55%;
+//           }
 
 
-          &:nth-child(1) {
-            width: 100%;
-            position: relative;
+//           &:nth-child(1) {
+//             width: 100%;
+//             position: relative;
 
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: flex-end;
             
 
-            @include isLarge {
-              width: 50%;
-            }
+//             @include isLarge {
+//               width: 50%;
+//             }
 
 
-            .col-image-2 {
-              width: 35%;
-              position: absolute;
-              left: 10%;
-              top: -10%;
-              z-index: -1;
+//             .col-image-2 {
+//               width: 35%;
+//               position: absolute;
+//               left: 10%;
+//               top: -10%;
+//               z-index: -1;
 
 
-              .circle-image {
-                width: 100%;
-                height: 100%;
-                border-radius: 50%;
-                box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-              }
-            }
+//               .circle-image {
+//                 width: 100%;
+//                 height: 100%;
+//                 border-radius: 50%;
+//                 box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+//               }
+//             }
 
-            .col-image-1 {
-              width: 85%;
+//             .col-image-1 {
+//               width: 85%;
 
-              @include isRetina {
-                width: 85%;
-              }
+//               @include isRetina {
+//                 width: 85%;
+//               }
               
-              img {
-                width: 100%;
-                height: 100%;
-                border-radius: 50%;
-                box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-              }
-            }
+//               img {
+//                 width: 100%;
+//                 height: 100%;
+//                 border-radius: 50%;
+//                 box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+//               }
+//             }
 
-            .col-image-3 {
-              position: absolute;
-              left: -2%;
-              bottom: -25%;
-              z-index: -3;
+//             .col-image-3 {
+//               position: absolute;
+//               left: -2%;
+//               bottom: -25%;
+//               z-index: -3;
 
-              @include isRetina {
-                bottom: -15%;
-              }
+//               @include isRetina {
+//                 bottom: -15%;
+//               }
 
-              @include is1500 {
-                bottom: -10%;
-              }
+//               @include is1500 {
+//                 bottom: -10%;
+//               }
 
-              @include is1700 {
-                bottom: -5%;
-              }
-            }
-          }
-
-
-
-          &:nth-child(2) {
-            width: 100%;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 70px;
+//               @include is1700 {
+//                 bottom: -5%;
+//               }
+//             }
+//           }
 
 
-            @include isLarge {
-              width: 50%;
-              margin-bottom: 0;
-              align-items: flex-start;
-              margin-top: 50px;
-            }
 
-            @include isRetina {
-              padding-left: 80px;
-            }
+//           &:nth-child(2) {
+//             width: 100%;
+//             position: relative;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: center;
+//             margin-bottom: 70px;
 
-            h2 {
-              text-align: center;
+
+//             @include isLarge {
+//               width: 50%;
+//               margin-bottom: 0;
+//               align-items: flex-start;
+//               margin-top: 50px;
+//             }
+
+//             @include isRetina {
+//               padding-left: 80px;
+//             }
+
+//             h2 {
+//               text-align: center;
             
 
-              @include isLarge {
-                text-align: left;
-              }
-            }
+//               @include isLarge {
+//                 text-align: left;
+//               }
+//             }
     
             
-            p {
-              text-align: center;
-              width: 100%;
+//             p {
+//               text-align: center;
+//               width: 100%;
               
-              @include isLarge {
-                text-align: left;
-              }
+//               @include isLarge {
+//                 text-align: left;
+//               }
 
-              @include isRetina {
-                width: 90%;
+//               @include isRetina {
+//                 width: 90%;
               
-              }
-            }
+//               }
+//             }
       
-            .btn-container {
-              margin-top: 50px;
-              position: relative;
-              z-index: 999;
-              display: flex;
-              gap: 15px;
-              flex-direction: column;
-              align-items: center;
+//             .btn-container {
+//               margin-top: 50px;
+//               position: relative;
+//               z-index: 999;
+//               display: flex;
+//               gap: 15px;
+//               flex-direction: column;
+//               align-items: center;
               
       
-              @include isLarge {
-                flex-direction: row;
-              }
-            }
-          }
-        }
-      }
+//               @include isLarge {
+//                 flex-direction: row;
+//               }
+//             }
+//           }
+//         }
+//       }
 
 
-    }
+//     }
 
-  }
+//   }
  
 
-}
+// }
 
 section.testimonials {
   position: relative;

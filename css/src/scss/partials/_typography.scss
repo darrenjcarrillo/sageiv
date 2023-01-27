@@ -35,63 +35,69 @@
 	  # Simple Typography Settings
   \*------------------------------------*/
 
-// //Linotype Didot
-// $font-family: "linotype-didot-headline", serif;
-// $font-weight: 400;
-// $font-style: normal;
-
-// //Linotype Didot
-// $font-family: "linotype-didot-headline", serif;
-// $font-weight: 500;
-// $font-style: normal;
-
-
-// //Linotype Didot
-// $font-family: "linotype-didot-headline", serif;
-// $font-weight: 600;
-// $font-style: normal;
-
-// //Linotype Didot
-// $font-family: "linotype-didot-headline", serif;
-// $font-weight: 900;
-// $font-style: normal;
-
-//Arboria PT
-$font-family: "montserrat", sans-serif;
-$font-weight: 300;
-$font-style: normal;
-
-//montserrat PT
-$font-family: "montserrat", sans-serif;
+//Linotype Didot
+$font-family: "linotype-didot", serif;
 $font-weight: 400;
 $font-style: normal;
 
-//montserrat PT
-$font-family: "montserrat", sans-serif;
+//Linotype Didot
+$font-family: "linotype-didot", serif;
 $font-weight: 500;
 $font-style: normal;
 
-//montserrat PT
-$font-family: "montserrat", sans-serif;
+
+//Linotype Didot
+$font-family: "linotype-didot", serif;
 $font-weight: 600;
 $font-style: normal;
 
 //montserrat PT
-$font-family: "montserrat", sans-serif;
+$font-family: "linotype-didot", serif;
 $font-weight: 700;
 $font-style: normal;
 
-//montserrat PT
-$font-family: "montserrat", sans-serif;
+
+//Linotype Didot
+$font-family: "linotype-didot", serif;
+$font-weight: 900;
+$font-style: normal;
+
+//Arboria PT
+$font-family: "futura-pt", sans-serif;
+$font-weight: 300;
+$font-style: normal;
+
+//futura-pt PT
+$font-family: "futura-pt", sans-serif;
+$font-weight: 400;
+$font-style: normal;
+
+//futura-pt PT
+$font-family: "futura-pt", sans-serif;
+$font-weight: 500;
+$font-style: normal;
+
+//futura-pt PT
+$font-family: "futura-pt", sans-serif;
+$font-weight: 600;
+$font-style: normal;
+
+//futura-pt PT
+$font-family: "futura-pt", sans-serif;
+$font-weight: 700;
+$font-style: normal;
+
+//futura-pt PT
+$font-family: "futura-pt", sans-serif;
 $font-weight: 900;
 $font-style: normal;
 
 
 
-$font-primary:  "montserrat", sans-serif;
-$font-secondary: "montserrat", sans-serif;
-$font-third: "montserrat", sans-serif;
-$font-fourth: "montserrat", sans-serif;
+$font-primary:  "linotype-didot", serif;
+$font-secondary: "futura-pt", sans-serif;
+$font-third: "linotype-didot", serif;
+$font-fourth: "futura-pt", sans-serif;
 // Base Font for HTML
 $base-font-size: 18px;
 
@@ -201,27 +207,26 @@ h1 {
     text-transform: uppercase;
     font-weight: normal;
     text-align: center;
-    font-weight: bold;
+    font-weight: 400;
     margin-bottom: 30px;
     line-height: 1.2;
 
     @include isSmall {
       font-size: 2.1875rem;
-      margin-bottom: 50px;
     }
 
   
     @include isLarge {
-      font-size: 2.5rem;
+      font-size: 3.5rem;
     }
   
     @include isRetina {
-      font-size: 3.125rem;
-      line-height: 60px;
+      font-size: 4rem;
     }
   
     @include is1500 {
-      font-size: 3.5rem;
+      font-size: 5.625rem;
+
     }
   
   }
@@ -258,30 +263,36 @@ h2 {
   }
 
 
-  &.h-title {
+ &.h-title {
     font-size: $header-size;
     font-weight: normal;
-    font-size: 2.1875rem;
-    letter-spacing: 0;
+    font-size: 2rem;
+    // letter-spacing: 0.5rem;
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: normal;
     text-align: center;
-    font-weight: bold;
-    margin-bottom: 50px;
+    font-weight: 400;
+    margin-bottom: 30px;
     line-height: 1.2;
+
+    @include isSmall {
+      font-size: 2.1875rem;
+      margin-bottom: 50px;
+    }
+
   
     @include isLarge {
-      font-size: 2.5rem;
+      font-size: 3.5rem;
     }
   
     @include isRetina {
-      font-size: 3.125rem;
-      line-height: 70px;
+      font-size: 4rem;
     }
   
     @include is1500 {
-      font-size: 3.5rem;
+      font-size: 5.3rem;
+      
     }
   
   }
@@ -293,29 +304,26 @@ h3 {
   &.h-title {
     font-size: $header-size;
     font-weight: normal;
-    font-size: 2.1875rem;
+    font-size: 1.25rem;
     letter-spacing: 0;
     margin-bottom: 0;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: normal;
     text-align: center;
-    font-weight: bold;
-    margin-bottom: 50px;
-
+    font-family: $font-secondary;
+    // margin-bottom: 50px;
     line-height: 1.2;
+    
 
   
-    @include isLarge {
-      font-size: 2.5rem;
-    }
   
     @include isRetina {
-      font-size: 2.875rem;
+      font-size: 1.5rem;
       line-height: 60px;
     }
   
     @include is1500 {
-      font-size: 3.125rem;
+      font-size: 1.5625rem;
     }
   
   }
@@ -373,6 +381,7 @@ p {
   line-height: 1.5;
   letter-spacing: none;
   font-weight: 400;
+  color: $color-third;
 
   @include isSmall {
     font-size: 1rem;
@@ -385,7 +394,7 @@ p {
 
   @include is1500 {
     font-size: 1.25rem;
-    line-height: 40px;
+    line-height: 35px;
   }
 
   &.semi-b {
@@ -401,7 +410,7 @@ p {
     //   margin-bottom: 0;
   }
 
-  color: #000;
+  // color: #000;
 }
 
 // Links

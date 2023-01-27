@@ -1,7 +1,8 @@
 /* BUTTON STYLES */
 
 .btn-container {
-  
+
+  flex-wrap: wrap;
   @media screen and (max-width: 992px) {
   }
 }
@@ -39,24 +40,17 @@
     opacity: 0.5;
   }
 
-  &.ui-btn-gradient {
-    background: rgb(179,84,30);
-    background: linear-gradient(133deg, rgba(179,84,30,1) 0%, rgba(161,51,51,1) 100%);
-    color: $f;
-  }
 
-  &.ui-btn-line {
-    width: 80%;
-    background: rgb(179,84,30);
-    background: linear-gradient(133deg, rgba(179,84,30,1) 0%, rgba(161,51,51,1) 100%);
-    padding: 10px 0;
-    color: $f;
-    font-size: 0.9375;
-    margin: 0 auto;
-    
 
-    @include isXLarge {
-      font-size: 1rem;
+  &.ui-btn-blue {
+    background-color: transparent;
+    color: $color-fourth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      margin: 0 15px;
     }
   }
 
