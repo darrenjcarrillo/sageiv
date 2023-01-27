@@ -1,0 +1,65 @@
+/* BUTTON STYLES */
+
+.btn-container {
+  
+  @media screen and (max-width: 992px) {
+  }
+}
+
+// main button container
+
+.ui-btn {
+  display: flex;
+  color: $b;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  opacity: 1;
+  background-color: $f;
+  padding: 15px 0;
+  justify-content: center;
+  width: 276px;
+  transition: 0.3s;
+  line-height: 21px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 0.9375rem;
+
+  @include isSmall {
+    font-size: 1rem;
+  }
+
+
+  &:hover {
+    text-decoration: none;
+    transition: 0.3s;
+    transform: scale(0.95);
+    opacity: 0.5;
+  }
+
+  &.ui-btn-gradient {
+    background: rgb(179,84,30);
+    background: linear-gradient(133deg, rgba(179,84,30,1) 0%, rgba(161,51,51,1) 100%);
+    color: $f;
+  }
+
+  &.ui-btn-line {
+    width: 80%;
+    background: rgb(179,84,30);
+    background: linear-gradient(133deg, rgba(179,84,30,1) 0%, rgba(161,51,51,1) 100%);
+    padding: 10px 0;
+    color: $f;
+    font-size: 0.9375;
+    margin: 0 auto;
+    
+
+    @include isXLarge {
+      font-size: 1rem;
+    }
+  }
+
+}
+
+
