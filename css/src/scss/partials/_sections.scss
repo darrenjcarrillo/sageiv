@@ -42,10 +42,6 @@ section.welcome {
         // @media screen and (max-width: 1240px) {
         //   opacity: 0.3;
         // }
-        @media screen and (max-width: 700px) {
-          // opacity: 0.3;
-          object-position: 75%;
-        }
       }
     }
 
@@ -57,7 +53,7 @@ section.welcome {
     // padding: ;
 
     height: 900px;
-    padding: 0;
+    padding: 0 15px;
 
     @include isLarge {
       padding: 0;
@@ -177,7 +173,11 @@ section.iv-therapy {
     flex-direction: column;
     padding: 0;
     justify-content: center;
-    padding: 100px 0;
+    padding: 50px 10px;
+
+    @include isLarge {
+      padding: 100px 0;
+    }
 
     .content {
       width: 100%;
@@ -219,23 +219,29 @@ section.iv-therapy {
           div.col-content {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             justify-content: center;
             border: 3px solid $color-main;
-            padding: 100px 70px;
+            padding: 50px 15px;
+
+            @include isLarge {
+              padding: 100px 70px;
+              align-items: flex-start;
+            }
 
             h1 {
               text-align: center;
-              margin-bottom: 0;
+              
   
               @include isLarge {
                 text-align: left;
+                margin-bottom: 0;
               }
             }
     
             
             p {
-              margin-bottom: 0;
+              
               text-align: center;
               width: 100%;
               margin: 0 auto;
@@ -244,6 +250,7 @@ section.iv-therapy {
               @include isLarge {
                 margin-top: 40px;
                 text-align: left;
+                margin-bottom: 0;
               }
             }
       
