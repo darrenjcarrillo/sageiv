@@ -6,12 +6,8 @@ section.welcome {
   position: relative;
   display: flex;
   align-items: center;
-  // margin-top: 150px;
   min-height: 100vh;
 
-  @include isLarge {
-    // margin-top: 128px;
-  }
 
   .img {
     position: absolute;
@@ -50,8 +46,6 @@ section.welcome {
 
   .container {
     position: relative;
-    // padding: ;
-
     height: 900px;
     padding: 0 15px;
 
@@ -92,8 +86,7 @@ section.welcome {
           }
 
           .col-img {
-            // margin: 0 auto;
-
+  
             img {
               margin: 0 auto;
             }
@@ -103,7 +96,11 @@ section.welcome {
 
 
           &:nth-child(1) {
-            margin-top: 100px;
+            margin-top: 150px;
+
+            @include isLarge {
+              margin-top: 100px;
+            }
           }
 
           &:nth-child(2) {
@@ -117,16 +114,13 @@ section.welcome {
   }
 }
 
-
 section.iv-therapy {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  // min-height: 900px;
-  // padding: 0 0 100px;
-
+  
   .img {
     position: absolute;
     top: 0;
@@ -156,10 +150,6 @@ section.iv-therapy {
         // @media screen and (max-width: 1240px) {
         //   opacity: 0.3;
         // }
-        @media screen and (max-width: 700px) {
-          // opacity: 0.3;
-          // object-position: 75%;
-        }
       }
     }
 
@@ -212,9 +202,6 @@ section.iv-therapy {
           @include isLarge {
             width: 45%;
           }
-       
-
- 
 
           div.col-content {
             display: flex;
@@ -275,16 +262,11 @@ section.iv-therapy {
               @include isLarge {
                 flex-direction: row;
               }
-  
-  
+
             }
           } 
-
-
-
         }
       }
-
 
     }
 
@@ -335,10 +317,6 @@ section.about {
         // @media screen and (max-width: 1240px) {
         //   opacity: 0.3;
         // }
-        @media screen and (max-width: 700px) {
-          // opacity: 0.3;
-          // object-position: 75%;
-        }
       }
     }
 
@@ -442,9 +420,6 @@ section.about {
               margin: 0 auto;
 
 
-              
-             
-  
               @include isLarge {
                 margin-top: 40px;
               }
@@ -463,16 +438,11 @@ section.about {
               @include isLarge {
                 flex-direction: row;
               }
-  
-  
+
             }
           } 
-
-
-
         }
       }
-
 
     }
 
@@ -522,14 +492,9 @@ section.col-banner {
         // @media screen and (max-width: 1240px) {
         //   opacity: 0.3;
         // }
-        @media screen and (max-width: 700px) {
-          // opacity: 0.3;
-          // object-position: 75%;
-        }
       }
     }
 
-   
   }
 }
 
@@ -597,15 +562,10 @@ section.team {
 
           @include isLarge {
             width: 95%;
-            // padding: 200px 0 50px;
-          }
 
-          @include isXLarge {
-            // padding: 150px 50px;
           }
           
           @include is1700 {
-            // padding: 250px 0 50px;
             padding: 150px 0 50px;
           }
   
@@ -624,7 +584,6 @@ section.team {
                 padding-bottom: 40px;
                 margin: 0 auto;
                 width: 90%;
-                // padding: 50px 20px;
                 border: 3px solid $color-main;
                 flex-direction: column;
 
@@ -834,10 +793,7 @@ section.iv-infusion {
         // @media screen and (max-width: 1240px) {
         //   opacity: 0.3;
         // }
-        @media screen and (max-width: 700px) {
-          // opacity: 0.3;
-          // object-position: 75%;
-        }
+
       }
     }
 
@@ -909,7 +865,6 @@ section.iv-infusion {
 
 
           .card-wrapper {
-            // width: 30%;
             margin-bottom: 40px;
             border: 2px solid $color-secondary;
             position: relative;
@@ -954,7 +909,6 @@ section.iv-infusion {
               width: 100%;
               position: absolute;
               bottom: 0;
-              // z-index: 999;
               padding: 0 20px;
               padding-bottom: 20px;
 
@@ -976,7 +930,6 @@ section.iv-infusion {
 
 
               .btn-container {
-                // display: none;
                 width: 100%;
                 display: flex;
                 justify-content: flex-end;
@@ -989,13 +942,7 @@ section.iv-infusion {
               }
             }
 
-
-
- 
-
           }
-    
-
         }
 
         .btn-container {
@@ -1058,10 +1005,6 @@ section.form {
         // @media screen and (max-width: 1240px) {
         //   opacity: 0.3;
         // }
-        @media screen and (max-width: 700px) {
-          // opacity: 0.3;
-          // object-position: 75%;
-        }
       }
     }
 
@@ -1080,8 +1023,6 @@ section.form {
       padding: 0;
     }
 
- 
-
 
     .formcontent {
       width: 100%;
@@ -1090,9 +1031,7 @@ section.form {
       flex-direction: column;
       align-items: center;
       border: 3px solid $color-main;
-    
       position: relative;
-      // border-radius: 80px;
       padding: 25px 0;
 
       @include isLarge {
@@ -1354,10 +1293,6 @@ section.blog {
         // @media screen and (max-width: 1240px) {
         //   opacity: 0.3;
         // }
-        @media screen and (max-width: 700px) {
-          // opacity: 0.3;
-          // object-position: 75%;
-        }
       }
     }
 
@@ -1416,12 +1351,10 @@ section.blog {
         margin-top: 50px;
 
         .col-item {
-          // width: 100
           display: flex;
           align-items: center;
           justify-content: space-between;
           flex-direction: column;
-          // flex-wrap: wrap;
           
           @include isLarge {
             flex-direction: row;
@@ -1476,13 +1409,19 @@ section.blog {
                 padding-right: 20px;
               }
  
-              h4 {
+              h3 {
                 font-weight: 400;
                 font-family: $font-secondary;
                 text-align: left;
                 text-transform: none;
                 margin: 30px 0 20px;
                 letter-spacing: 0;
+                color: $f;
+                font-size: 1.12rem;
+
+                @include isLarge {
+                  font-size: 1.43rem;
+                }
               }
   
               p {
@@ -1498,10 +1437,6 @@ section.blog {
 
 
               .btn-container {
-                // display: none;
-                // width: 100%;/
-                // display: flex;
-                // justify-content: flex-end;
 
                 a {
                   width: 100%;
@@ -1517,10 +1452,6 @@ section.blog {
                 }
               }
             }
-
-
-
- 
 
           }
     
