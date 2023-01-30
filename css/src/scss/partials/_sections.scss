@@ -945,12 +945,212 @@ section.iv-infusion {
 
 }
 
+section.blog {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0 ;
+  overflow: hidden;
+
+
+  @include isRetina {
+    padding: 100px 0 ;
+  }
+
+  .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    margin: 0 auto;
+
+    align-items: center;
+    justify-content: center;
+
+
+    picture {
+      width: 100%;
+      height: 100%;
+
+
+
+      img {
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: 100%;
+        // @media screen and (max-width: 1240px) {
+        //   opacity: 0.3;
+        // }
+        @media screen and (max-width: 700px) {
+          // opacity: 0.3;
+          // object-position: 75%;
+        }
+      }
+    }
+
+   
+  }
+
+  .container {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    max-width: 90%;
+
+    .content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      
+      h2 {
+        text-align: center;
+        margin: 0;
+        color: $f;
+
+        @include isLarge {
+          text-align: left;
+        }
+      }
+
+      
+      p {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        @include isLarge {
+          width: 70%;
+        }
+
+        @include isRetina {
+          width: 60%;
+        }
+      }
+
+
+      .col-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 50px;
+
+        .col-item {
+          // width: 100
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+
+          .card-wrapper {
+            width: 30%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 20px;
+            // margin-bottom: 50px;
+         
+
+            @include isRetina {
+              max-width: 482px;
+            }
+
+
+
+            .img-wrapper {
+              z-index: 0;
+    
+              
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+
+
+            .text-content {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: center;
+              width: 100%;
+              padding-right: 20px;
+ 
+              h4 {
+                font-weight: 400;
+                font-family: $font-secondary;
+                text-align: left;
+                text-transform: none;
+                margin: 30px 0 20px;
+                letter-spacing: 0;
+              }
+  
+              p {
+                text-align: left;
+                margin: 0;
+                color: $f;
+                width: 100%;
+              }
+
+
+              .btn-container {
+                // display: none;
+                // width: 100%;/
+                // display: flex;
+                // justify-content: flex-end;
+
+                a {
+                  width: 100%;
+                  position: relative;
+                  color: $f;
+                
+
+                  @include isLarge {
+                    margin-left: -10px;
+
+                  }
+                }
+              }
+            }
+
+
+
+ 
+
+          }
+    
+
+        }
+      }
+
+
+    }
+
+  }
+ 
+
+}
+
 section.form {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 0 50px;
+  // padding: 0 0 50px;
 
   @include isRetina {
       min-height: 100vh;

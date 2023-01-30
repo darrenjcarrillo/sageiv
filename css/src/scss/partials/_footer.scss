@@ -2,15 +2,10 @@
 
 #main {
   background-color: #fff;
-  padding: 100px 0 0;
-
 
   section.footer-main {
     padding-bottom: 50px;
 
-    @include isLarge {
-      padding-bottom: 100px;
-    }
 
   .container {
     display: flex;
@@ -49,23 +44,7 @@
         
 
 
-          h2 {
-            font-family: $font-secondary;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 28px;
-            margin: 0;
-            text-transform: capitalize;
-            margin-bottom: 20px;
-            letter-spacing: 0;
-            text-align: center;
-            color: $f;
 
-
-            @include isLarge {
-              text-align: left;
-            }
-          }
           
           .col-items {
             display: flex;
@@ -77,11 +56,6 @@
               justify-content: space-between;
               width: 100%;
 
-              @include isLarge {
-                padding-right: 40px;
-              }
-
-       
 
               span.item {
 
@@ -95,12 +69,13 @@
                   }
          
 
-                a {
+                a.footer-link {
                   color: $b;
                   line-height: 35px;
-                  font-size: 0.9rem;
+                  font-size: 1.125rem;
                   font-family: $font-secondary;
                   font-weight: normal;
+                  text-transform: uppercase;
 
                   &:hover {
                     text-decoration: none;
@@ -108,78 +83,61 @@
                   }
                 }
 
-                p {
-                  font-size: 0.9rem;
-                  margin: 0;
-                  color: $b;
-                  font-family: $font-secondary;
-                  line-height: 35px;
-                  font-weight: normal;
-                }
-
-                &.phone-number {
-                  // margin: 20px 0;
-                }
-
-                &.locations {
-                  display: flex;
-                  flex-direction: column;
-                  margin-bottom: 30px;
-                }
-
-                &.social {
-                 
-                  a {
-                    margin-right: 15px;
-
-                    &::before {
-                      display: none;
-                    }
-                  }
-                }
-
-
-                .item-content {
-                  display: flex;
-
-                  span {
-                    margin-right: 15px;
-                  }
 
 
 
-
-                  .phone-link {
-                    display: flex;
-                    flex-direction: column;
-
-                  }
-                }
               }
               
             }
+
+
+            
+
           }
-
-          &:nth-last-child(1) {
-
-            .col-items {
-              display: flex;
-              
-
-              @include isLarge {
-                align-items: flex-start;
-              }
+        }
 
 
-              .col-item {
+        .contact-info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+       
 
-                &:nth-last-child(1) {
-                  padding: 0;
-                }
-              }
+          a.footer-link {
+            color: $b;
+            line-height: 35px;
+            font-size: 1.125rem;
+            font-family: $font-secondary;
+            font-weight: normal;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 20px;
+
+
+            &:hover {
+              text-decoration: none;
+              opacity: 0.5;
             }
           }
 
+          p {
+            margin-bottom: 50px;
+          }
+
+     
+        }
+
+        .social {
+          display: flex;
+
+          a {
+            margin: 0 20px;
+            &:hover {
+              text-decoration: none;
+              opacity: 0.5;
+            }
+          }
         }
 
 
@@ -190,190 +148,190 @@
     }
   }
 
-   // copywrite
-   .footercopy {
-    // padding: 7px 0 0;
-    position: relative;
-    z-index: 1;
-
-
-    .container {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      // margin-bottom: 55px;
-      padding: 0;
-      margin: 0;
-      max-width: 100%;
-    }
-
-
-    @media screen and (max-width: 700px) {
-      margin-top: 0;
-    }
-    .socialbar {
-      display: flex;
-      @media screen and (max-width: 700px) {
-        padding: 0 0 20px;
-      }
-    }
-
-    .row {
-      width: 100%;
-      justify-content: center;
-
-      &:nth-child(1) {
-       
-        @include isLarge {
-          // margin-top: 30px;
-        }
-
-        .flexcen {
-
-          .copy__content {
-
-            a {
-
-              &::before {
-                display: none
-              }
-
-              &:hover {
-                opacity: 0.5;
-              }
-            }
-          }
-        };
-        
-      }
-
-      &:nth-child(2) {
-        background-color: $f;
+     // copywrite
+     .footercopy {
+      // padding: 7px 0 0;
+      position: relative;
+      z-index: 1;
+  
+  
+      .container {
         display: flex;
-        justify-content: center;
-        padding: 10px 15px;
+        align-items: center;
+        flex-direction: column;
+        // margin-bottom: 55px;
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+      }
   
-        @include isLarge{
-          justify-content: center;
+  
+      @media screen and (max-width: 700px) {
+        margin-top: 0;
+      }
+      .socialbar {
+        display: flex;
+        @media screen and (max-width: 700px) {
+          padding: 0 0 20px;
         }
-        
-        .flexcen {
-          margin: 0;
-          flex-direction: column;
-          align-items: center;
-
-          @include is1700 {
-            flex-direction: row;
+      }
+  
+      .row {
+        width: 100%;
+  
+        &:nth-child(1) {
+         
+          @include isLarge {
+            // margin-top: 30px;
           }
   
-          .copy__content {
-            margin: 0 auto;
-            color: $b;
-
-            span {
-              color: $b;
+          .flexcen {
+  
+            .copy__content {
+  
               a {
-                color: $b;
-                font-size: 0.9rem;
-                font-family: $font-secondary;
-                line-height: 1.5;
-                font-weight: 500;
-                
+  
                 &::before {
-                  display: none;
-
+                  display: none
                 }
-
+  
                 &:hover {
                   opacity: 0.5;
                 }
               }
             }
-          }
-
+          };
+          
         }
   
-      }
-
-      .footer-links {
-      
-        
-       @include isLarge {
-        padding-left: 10px;
-       }
-        
-
-        @include is1700 {
-          position: absolute;
-          right: 15px;
+        &:nth-child(2) {
+          background-color: $color-main;
+          display: flex;
+          justify-content: center;
+          padding: 10px 15px;
+    
+          @include isLarge{
+            justify-content: center;
+          }
+          
+          .flexcen {
+            margin: 0;
+            flex-direction: column;
+            align-items: center;
+  
+            @include is1700 {
+              flex-direction: row;
+            }
+    
+            .copy__content {
+              margin: 0 auto;
+              color: $f;
+  
+              span {
+                color: $f;
+                a {
+                  color: $f;
+                  font-size: 1rem;
+                  font-family: $font-secondary;
+                  line-height: 1.5;
+                  font-weight: 400;
+                  text-transform: uppercase;
+                  
+                  &::before {
+                    display: none;
+  
+                  }
+  
+                  &:hover {
+                    opacity: 0.5;
+                  }
+                }
+              }
+            }
+  
+          }
+    
         }
-
-        a {
-          font-weight: 400;
+  
+        .footer-links {
+        
+          
+         @include isLarge {
+          padding-left: 10px;
+         }
+          
+  
+          @include is1700 {
+            position: absolute;
+            right: 15px;
+          }
+  
+          a {
+            font-weight: 400;
+          }
         }
       }
-    }
-
-
-    .flexcen {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.9rem;
- 
-      
-      @media screen and (max-width: 1200px) {
-        flex-direction: column;
-      }
-    }
-
-    .flexcen .copy__content {
-      margin: 0 auto;
-      color: $b;
-      font-weight: 500;
-      text-transform: capitalize;
-      font-size: 0.9rem;
-
-      @media screen and (max-width: 700px) {
+  
+  
+      .flexcen {
         display: flex;
-        flex-direction: column;
         align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+   
+        
+        @media screen and (max-width: 1200px) {
+          flex-direction: column;
+        }
       }
-    }
-    span.l {
-      margin: 0 5px;
-      color: $b;
-
-      font-size: 0.9rem;
-      font-weight: normal;
-      font-family: $font-secondary;
-      @media screen and (max-width: 700px) {
-        display: none;
+  
+      .flexcen .copy__content {
+        margin: 0 auto;
+        color: $f;
+        font-weight: 400;
+        text-transform: capitalize;
+        font-size: 1rem;
+  
+        @media screen and (max-width: 700px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
       }
+      span.l {
+        margin: 0 5px;
+        color: $f;
+  
+        font-size: 1rem;
+        font-weight: normal;
+        font-family: $font-secondary;
+        @media screen and (max-width: 700px) {
+          display: none;
+        }
+      }
+      .copy__content a {
+        color: $f;
+        text-transform: capitalize;
+        font-size: 1rem;
+        font-weight: normal;
+        font-weight: 400;
+        font-family: $font-secondary;
+      }
+  
+      .flexcen {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: 0 ;
+        // margin: 0 auto 20px;
+        font-weight: normal;
+  
+       
+        justify-content: space-between
+      }
+  
     }
-    .copy__content a {
-      color: $b;
-      text-transform: capitalize;
-      font-size: 0.9rem;
-      font-weight: normal;
-      font-weight: 400;
-      font-family: $font-secondary;
-    }
-
-    .flexcen {
-      align-items: center;
-      justify-content: center;
-      display: flex;
-      margin: 0 ;
-      // margin: 0 auto 20px;
-      font-weight: normal;
-
-     
-      justify-content: space-between
-    }
-
-  }
-
+  
 }
 
 
