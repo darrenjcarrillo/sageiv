@@ -18,13 +18,11 @@
   letter-spacing: 0em;
   background-color: $f;
   font-family: $font-secondary;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-weight: normal;
-
   font-size: 0.875rem;
   line-height: 1.5;
   padding: 12px 15px;
-
   border-radius: 30px;
   font-weight: 500;
   font-size: 1rem;
@@ -40,7 +38,7 @@
   letter-spacing: 0em;
   line-height: 1.875;
   font-family: $font-secondary;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -78,7 +76,7 @@ input.form-control {
   color: $b;
   font-weight: 500;
   background-color: $f;
-  border: 1px solid $b;
+  border: 1px solid $color-secondary;
   // box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px;
 }
 
@@ -90,11 +88,11 @@ select.form-control {
 
   border-radius: 30px;
 
-  text-transform: capitalize;
+  text-transform: uppercase;
 
 
   option {
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
 
   &::placeholder {
@@ -118,7 +116,7 @@ select.form-control {
   font-size: 1rem;
   background-color: $f;
 
-  border: 1px solid $b;
+  border: 1px solid $color-secondary;
   // box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px;
 }
 
