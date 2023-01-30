@@ -201,7 +201,7 @@ h1 {
   &.h-title {
     font-size: $header-size;
     font-weight: normal;
-    font-size: 2rem;
+    font-size: 2.5rem;
     // letter-spacing: 0.5rem;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -212,7 +212,7 @@ h1 {
     line-height: 1.2;
 
     @include isSmall {
-      font-size: 2.1875rem;
+      // font-size: 2.1875rem;
     }
 
   
@@ -266,7 +266,7 @@ h2 {
  &.h-title {
     font-size: $header-size;
     font-weight: normal;
-    font-size: 2rem;
+    font-size: 2.5rem;
     // letter-spacing: 0.5rem;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -277,7 +277,7 @@ h2 {
     line-height: 1.2;
 
     @include isSmall {
-      font-size: 2.1875rem;
+      // font-size: 2.1875rem;
       margin-bottom: 50px;
     }
 

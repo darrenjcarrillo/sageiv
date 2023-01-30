@@ -238,6 +238,14 @@ section.iv-therapy {
                 margin-bottom: 0;
               }
             }
+
+            h2 {
+              margin-bottom: 20px;
+
+              @include isLarge {
+                margin-bottom: 0;
+              }
+            }
     
             
             p {
@@ -339,7 +347,11 @@ section.about {
     flex-direction: column;
     padding: 0;
     justify-content: center;
-    padding: 0 50px 100px;
+    padding: 50px 10px;
+
+    @include isLarge {
+      padding: 0 50px 100px;
+    }
 
     .content {
       width: 100%;
@@ -372,11 +384,18 @@ section.about {
 
           
           @include isLarge {
+            width: 70%;
+          }
+
+          @include isXLarge {
+            width: 60%;
+          }
+
+
+          @include isRetina {
             width: 50%;
           }
        
-
- 
 
           div.col-content {
             display: flex;
@@ -384,18 +403,30 @@ section.about {
             align-items: center;
             justify-content: center;
             border: 3px solid $color-main;
-            padding: 100px 70px 70px;
+            padding: 50px 15px;
+
+            @include isLarge {
+              padding: 100px 70px 70px;
+            }
 
             h2 {
               text-align: center;
-              margin-bottom: 0;
-  
+
+              
+              @include isLarge {
+                margin-bottom: 0;
+              }
 
             }
 
             h3 {
               line-height: 1;
               text-align: center;
+              margin-bottom: 20px;
+
+              @include isLarge {
+                margin-bottom: 0;
+              }
             }
     
             
@@ -404,6 +435,9 @@ section.about {
               text-align: center;
               width: 100%;
               margin: 0 auto;
+
+
+              
              
   
               @include isLarge {
@@ -441,7 +475,6 @@ section.about {
  
 
 }
-
 
 section.col-banner {
   position: relative;
@@ -555,7 +588,7 @@ section.team {
 
         .slide-container {  
           width: 100%;
-          padding: 100px 0 50px;
+          padding: 100px 0;
 
           @include isLarge {
             width: 95%;
@@ -588,9 +621,11 @@ section.team {
                 width: 90%;
                 // padding: 50px 20px;
                 border: 3px solid $color-main;
+                flex-direction: column;
 
                 @include isLarge {
                   padding: 0 20px;
+                  flex-direction: row;
                 }
 
                 @include isXLarge {
@@ -604,14 +639,17 @@ section.team {
 
           
                 .image-content {
-                  width: 40%;
-                  position: absolute;
+                  width: 100%;
                   bottom: 0;
                   left: 8%;
+                  padding: 0 15px;
 
                   @include isLarge {
+                    width: 40%;
                     height: 500px;
                     width: 400px;
+                    padding: 0;
+                    position: absolute;
                   }
 
                   @include isXLarge {
@@ -642,10 +680,11 @@ section.team {
                   flex-direction: column;
                   align-items: flex-start;
                   justify-content: center;
-                  width: 60%;
+                  width: 100%;
                   z-index: 1;
 
-                  @include isMedium {
+                  @include isLarge {
+                    width: 60%;
                     padding: 25px 25px 25px 50px;
                   }
 
@@ -725,6 +764,11 @@ section.team {
             width: 60px;
             background-color: $color-secondary;
             border-radius: 50%;
+            top: 95% !important;
+
+            @include isLarge {
+              top: 50%  !important;
+            }
             
           }
           .swiper-button-prev {
